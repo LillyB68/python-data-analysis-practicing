@@ -98,4 +98,14 @@ def word_count(sentence):
 print(word_count(sentence="I love, lilly"))
 
 #error handling
+def error_handling():
+    try:
+        n = int(input("Enter a number: "))
+        print(f"The number you've entered is {n}")
+    except ValueError:
+        print("Invalid number.")
 
+error_handling()
+
+
+#Mini logic challenge
