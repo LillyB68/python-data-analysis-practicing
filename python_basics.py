@@ -105,7 +105,25 @@ def error_handling():
     except ValueError:
         print("Invalid number.")
 
-error_handling()
+
 
 
 #Mini logic challenge
+transactions = [
+    {"type": "income", "amount": 5000},
+    {"type": "expense", "amount": 1200},
+    {"type": "expense", "amount": 800},
+    {"type": "income", "amount": 2000}
+]
+
+#total income
+total_income = 0
+total_expenses  = 0
+for trans in transactions:
+    if trans["type"] == "income":
+        total_income += trans["amount"]
+    elif trans["type"] == "expense":
+        total_expenses += trans["amount"]
+        
+net_balance = total_income - total_expenses
+print(total_income, total_expenses, net_balance)
