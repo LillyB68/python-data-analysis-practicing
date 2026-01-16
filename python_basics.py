@@ -81,7 +81,21 @@ print(sale(sales))
 
 #functions and logic
 def highest_mark(marks):
-    
-    return
+    highest_mark = 0
+    for mark in marks:
+        if mark > highest_mark:
+            highest_mark = mark
+    return highest_mark
 
-marks = ["75", "60", "65", "85", "90"]
+marks = [75, 60, 65, 85, 90]
+print(highest_mark(marks))
+
+def word_count(sentence):
+    m = sentence.split()
+    print(m)
+    return len(m)
+
+print(word_count(sentence="I love, lilly"))
+
+#error handling
+
