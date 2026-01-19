@@ -33,3 +33,7 @@ passed = df[df["marks"]>=50]
 print(df[(df["marks"] < 50) | (df["hours_studied"] < 3)])
 
 #adding a new column to a dataframe
+df["passed"] = df["marks"] >= 50
+
+df["adjusted_mark"] = df["marks"] + 5
+print(df)
